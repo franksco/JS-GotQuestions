@@ -1,0 +1,15 @@
+<h1> Welcome to Got Questions </h1>
+
+We hope you find exactly what you're looking.
+
+<h2>Questions</h2>
+
+<ul>
+  {{#each model.questions as |question|}}
+     <li>{{#link-to 'question' question.id}}{{question.questionAuthor}} ask's {{question.question}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion="saveQuestion"}}
+
+<hr>

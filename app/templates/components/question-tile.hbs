@@ -1,0 +1,9 @@
+Current Answers:
+
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{#link-to 'answer' answer.id}}{{answer.author}} has replied saying: {{answer.reply}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<button {{action 'destroyQuestion' question}}>Delete</button>
