@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'npm:moment';
 
 export default Ember.Component.extend({
   addNewQuestion: false,
@@ -10,7 +11,8 @@ export default Ember.Component.extend({
       var params= {
         questionAuthor: this.get('questionAuthor'),
         question: this.get('question'),
-        additionalNotes: this.get('additionalNotes')
+        additionalNotes: this.get('additionalNotes'),
+        timestamp: moment().format()
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);

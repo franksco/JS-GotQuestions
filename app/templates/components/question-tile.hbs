@@ -1,3 +1,5 @@
+<h2>{{questionPostedOn}} by {{question.author}}</h2>
+
 Current Answers:
 
 <ul>
@@ -6,4 +8,5 @@ Current Answers:
   {{/each}}
 </ul>
 
+<button {{action 'addToWatchList' question}}>Add to Watch List</button>
 <button {{action 'destroyQuestion' question}}>Delete</button>

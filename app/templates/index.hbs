@@ -6,10 +6,14 @@ We hope you find exactly what you're looking.
 
 <ul>
   {{#each model.questions as |question|}}
-     <li>{{#link-to 'question' question.id}}{{question.questionAuthor}} ask's {{question.question}}{{/link-to}}</li>
+     <li>{{#link-to 'question' question.id}}{{question.questionAuthor}} {{my-moment question.timestamp}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
 
 <hr>
+
+<h3>Question Watch list</h3>
+
+<li>{{#link-to 'question' question.id}}{{question-list}}{{/link-to}}</li>
