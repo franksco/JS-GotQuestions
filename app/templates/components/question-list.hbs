@@ -1,3 +1,3 @@
 {{#each watchQuestions.questions as |question|}}
-  {{question.question}}
+  <li>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</li>
 {{/each}}
