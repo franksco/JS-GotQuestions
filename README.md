@@ -1,6 +1,6 @@
 # Got Questions
 
-A place where you can ask questions a get answers. You can add/delete both questions and answers, you can also update answers as well.
+A place where you can ask questions a get answers. You can add/delete both questions and answers, you can also update answers as well as well as make a list of watched questions on the front page that link back to said question.
 
 ## Prerequisites
 
